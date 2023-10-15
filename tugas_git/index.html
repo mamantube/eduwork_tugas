@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 offset-md-3 bg-primary" style="margin-top: 50px;">
+        <div class="col-md-6 offset-md-3 bg-primary px-4 py-4" style="margin-top: 50px;">
             <h2 class="fw-bold text-center">Apa itu Git?</h2>
             <h6 class="fw-bold">Deskripsi</h6>
             <ul>
@@ -60,6 +60,140 @@
                 </li>
                 <li>
                     Berkolaborasi dengan programmer dunia
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 bg-primary px-4 py-4" style="margin-top: 50px;">
+            <h2 class="fw-bold text-center">Perintah dalam Git</h2>
+            <h6 class="fw-bold">Git init</h6>
+            <ul>
+                <li>
+                    Digunakan untuk menginisialisasi repository
+                </li>
+                <li>
+                    Atau memberi tahu folder saat ini akan dijadikan repository
+                </li>
+                <li>
+                    Kita tidak bisa menggunakan git tanpa menginisialisasinya
+                </li>
+                <li>
+                    kode perintah: git init
+                </li>
+            </ul>
+            <h6 class="fw-bold">Git Config</h6>
+            <ul>
+                <li>
+                    Konfigurasi email dan username
+                </li>
+                <li>
+                    Biasanya disamakan dengan akun gitlab / github
+                </li>
+                <li>
+                    Config global untuk konfigurasi ke server
+                </li>
+                <li>
+                    Config local untuk konfigurasi local
+                </li>
+                <li>
+                    Kode perintah: <br>
+                  <ul>
+                    <li>
+                        git config --list (Untuk melihat semua konfigurasi yang ada di git bisa menggunakan perintah)
+                    </li>
+                    <li>
+                        git config --local user.name {nama-username} (Untuk membuat local username)
+                    </li>
+                    <li>
+                        git config --local user.name (Untuk melihat local username)
+                    </li>
+                    <li>
+                        git config --local user.email {email} (Untuk membuat local email)
+                    </li>
+                    <li>
+                        git config --local user.email (Untuk melihat local email)
+                    </li>
+                    <li>
+                        git config --global user.email (Untuk lonfigurasi global email)
+                    </li>
+                  </ul>
+
+                </li>
+            </ul>
+            <h6 class="fw-bold">Git Status</h6>
+            <ul>
+                <li>
+                    Digunakan untuk mengetahui status file
+                </li>
+                <li>
+                    Status file secara umum ada 3. Untracked, staging area, modified
+                </li>
+                <li>
+                    Kode perintah: git status
+                </li>
+            </ul>
+            <h6 class="fw-bold">Git add .</h6>
+            <ul>
+                <li>
+                    Untuk memasukan semua file ke staging area
+                </li>
+                <li>
+                    Kode perintah: git add .
+                </li>
+            </ul>
+            <h6 class="fw-bold">Git Commit</h6>
+            <ul>
+                <li>
+                    Untuk mencatat perubahan yang dilakukan
+                </li>
+                <li>
+                    Kode perintah: git commit -m "{pesan perubahan yang terjadi}"
+                </li>
+            </ul>
+            <h6 class="fw-bold">Git Log</h6>
+            <ul>
+                <li>
+                    Untuk melihat riwayat commit
+                </li>
+                <li>
+                    Kode perintah: git log
+                </li>
+            </ul>
+            <h6 class="fw-bold">Git Push</h6>
+            <ul>
+                <li>
+                    Untuk mengirimkan commit ke server
+                </li>
+                <li>
+                    Kode perintah: git push origin {nama branch}
+                </li>
+            </ul>
+            <h6 class="fw-bold">Git Clone</h6>
+            <ul>
+                <li>
+                    Digunakan untuk mengcopy repo dari server
+                </li>
+                <li>
+                    Kode perintah: git clone {url repository}
+                </li>
+            </ul>
+            <h6 class="fw-bold">Git Remote</h6>
+            <ul>
+                <li>
+                    Semacam api untuk berinteraksi dari client dengan server
+                </li>
+                <li>
+                    Kode perintah: git remote add origin {url repository}
+                </li>
+            </ul>
+            <h6 class="fw-bold">Git Pull</h6>
+            <ul>
+                <li>
+                    Untuk mengambil commit dari server jika ada perubahan di server yang dibuat oleh branch lain
+                </li>
+                <li>
+                    Kode perintah: git pull origin {nama branch}
                 </li>
             </ul>
         </div>
