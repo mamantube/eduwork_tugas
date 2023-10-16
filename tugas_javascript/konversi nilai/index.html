@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Konversi Nilai</title>
+</head>
+<body>
+    <h1>Konversi Nilai</h1>
+
+    <script>
+        let nilai = prompt("Silahkan Masukkan Nilai Anda: ")
+
+        if (nilai < 60) {
+            alert("Nilai anda E, anda wajib mengikuti remedial")
+        } else if (nilai < 70) {
+            alert("Nilai anda D, belajar lah lebih giat lagi")
+        } else if (nilai < 80) {
+            alert("Nilai anda C")
+        } else if (nilai < 90) {
+            alert("Nilai anda B")
+        } else if(nilai < 100) {
+            alert("Nilai anda A")
+        } else if (nilai == 100) {
+            alert("Selamat anda mendapat nilai A+")
+        } else {
+            alert("Anda Memasukkan nilai yang salah!")
+        }
+    </script>
+</body>
+</html>
