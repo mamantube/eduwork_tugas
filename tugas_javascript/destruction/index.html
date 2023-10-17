@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destruction</title>
+</head>
+<body>
+    <h1>Destruction</h1>
+
+    <script>
+        const hobi = ["Main Musik", "Ngoding", "Baca Buku", "Olahraga", "tidur", "Mendengarkan Musik"]
+
+        const [hobi1, hobi2, hobi3, ...lainnya] = hobi;
+        console.log(hobi1, hobi2, hobi3, lainnya)
+
+        const person = {
+            nama: "Muhammad Firman Hidayat",
+            golonganDarah: "0",
+            status: "Jomblo",
+            alamat: {
+                kelurahan: "Duri Kosambi",
+                kecamatan: "Cengkareng",
+                kota: "Jakarta",
+                provinsi: "DKI Jakarta"
+            },
+
+        };
+
+        const {nama, golonganDarah, status, ...dataLainnya} = person;
+        console.log(nama, golonganDarah, status, dataLainnya)
+
+        const printPerson = ({nama, golonganDarah:goldar, status, namaPanggilan="maman"}) => {
+            console.log(nama, goldar, status, namaPanggilan)
+        }
+
+        printPerson(person);
+    </script>
+</body>
+</html>
