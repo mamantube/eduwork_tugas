@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Variable</title>
+</head>
+<body>
+    <h1>Conditional Variable</h1>
+
+    <script>
+        const nilai = 70;
+
+        const kondisi1 = nilai > 60 ? "Anda Lulus" : "Anda Tidak Lulus";
+        console.log(kondisi1);
+
+        const kondisiAnd = nilai > 65 && "Selamat Anda Lulus";
+        console.log(kondisiAnd);
+
+        const kondisiOr = nilai < 65 || "Anda Tidak Lulus Silahkan Coba Lagi";
+        console.log(kondisiOr);
+
+        const pekerja = [
+            {
+                nama: "Mimin",
+                gaji: 5000000,
+                status: "Kontrak"
+            },
+            {
+                nama: "Maman",
+                gaji: 7000000,
+                status: "Staff"
+            },
+            {
+                nama: "Tini",
+                gaji: 10000000,
+                status: "Kontrak"
+            },
+            {
+                nama: "Tono",
+                gaji: 15000000,
+                status: "Staff"
+            },
+        ];
+
+        const listNama = pekerja.map((list) => list.nama);
+        console.log(listNama);
+
+        const gajiTinggi = pekerja.filter((penghasilan) => penghasilan.gaji > 7000000);
+        console.log(gajiTinggi)
+
+        const kartap = pekerja.filter((posisi) => posisi.status === "Staff");
+        console.log(kartap);
+    </script>
+</body>
+</html>
