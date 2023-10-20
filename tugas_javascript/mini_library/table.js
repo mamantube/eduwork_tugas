@@ -49,6 +49,9 @@ class Table {
       ["Munawaroh", "Lampung", "Kontrak", "IT Support"]
     ]
   });
+  
   const app = document.getElementById("app");
   table.render(app);
+
+  export { table };
   
